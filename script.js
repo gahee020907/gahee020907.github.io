@@ -1,47 +1,26 @@
-const root = document.documentElement;
-const themeToggle = document.querySelector('.theme-toggle');
-const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
-const navLinks = [...document.querySelectorAll('.nav a')];
+const links = [...document.querySelectorAll('.nav a[href^="#"]')];
 
-const savedTheme = localStorage.getItem('gahui-theme');
-if (savedTheme === 'dark' || savedTheme === 'light') {
-  root.dataset.theme = savedTheme;
-} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  root.dataset.theme = 'dark';
-}
-
-themeToggle.addEventListener('click', () => {
-  const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  root.dataset.theme = next;
-  localStorage.setItem('gahui-theme', next);
+menu.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menu.setAttribute('aria-expanded', String(open));
+  menu.textContent = open ? 'Close' : 'Menu';
 });
 
-menuToggle.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
-  menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded', 'false');
-  });
-});
+links.forEach((link) => link.addEventListener('click', () => {
+  nav.classList.remove('open');
+  menu.setAttribute('aria-expanded', 'false');
+  menu.textContent = 'Menu';
+}));
 
 const sections = [...document.querySelectorAll('main section[id]')];
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      navLinks.forEach((link) => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
-      });
-    });
-  },
-  { rootMargin: '-35% 0px -55% 0px' },
-);
-
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    links.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
 sections.forEach((section) => observer.observe(section));
+
 document.querySelector('#year').textContent = new Date().getFullYear();
