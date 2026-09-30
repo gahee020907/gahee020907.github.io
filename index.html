@@ -10,7 +10,7 @@
     <meta property="og:type" content="website" />
     <title>Gahui Kim | HCI Researcher</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260930-1" />
+    <link rel="stylesheet" href="styles.css?v=20261001-1" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -36,12 +36,29 @@
           </div>
         </aside>
         <div class="profile-main">
-          <p class="kicker">Human–Computer Interaction · Human–AI Interaction</p>
-          <h1 id="profile-name">Gahui Kim</h1>
-          <p class="role">HCI Researcher<br />Seoul, South Korea</p>
-          <p class="bio">I study how AI and immersive technologies shape user agency, metacognition, social acceptability, and emotional experience. My work combines interactive-system prototyping with controlled experiments and quantitative user research.</p>
-          <p class="bio">My recent work spans proactive and relational AI, socially situated sensing, immersive interaction, and multimodal prototype development.</p>
-          <p class="availability"><span></span>Seeking funded doctoral research opportunities beginning in Autumn 2027.</p>
+          <div class="profile-copy">
+            <p class="kicker">Human–Computer Interaction · Human–AI Interaction</p>
+            <h1 id="profile-name">Gahui Kim</h1>
+            <p class="role">HCI Researcher<br />Seoul, South Korea</p>
+            <p class="bio">I study how AI and immersive technologies shape user agency, metacognition, social acceptability, and emotional experience. My work combines interactive-system prototyping with controlled experiments and quantitative user research.</p>
+            <p class="bio">My recent work spans proactive and relational AI, socially situated sensing, immersive interaction, and multimodal prototype development.</p>
+            <p class="availability"><span></span>Seeking funded doctoral research opportunities beginning in Autumn 2027.</p>
+          </div>
+          <aside class="research-orbit" aria-label="Interactive map of research interests">
+            <div class="orbit-heading"><span>Research constellation</span><span>Move to explore</span></div>
+            <div class="orbit-stage">
+              <svg class="orbit-lines" viewBox="0 0 100 100" aria-hidden="true">
+                <line x1="50" y1="50" x2="24" y2="19"></line><line x1="50" y1="50" x2="77" y2="22"></line>
+                <line x1="50" y1="50" x2="20" y2="78"></line><line x1="50" y1="50" x2="78" y2="79"></line>
+              </svg>
+              <div class="orbit-core"><span>Human-centered</span><strong>AI × XR</strong></div>
+              <a class="orbit-node orbit-node-a" href="#research" data-note="Designing AI that supports agency without taking over.">Agency</a>
+              <a class="orbit-node orbit-node-b" href="#research" data-note="Helping people judge their own thinking with AI.">Metacognition</a>
+              <a class="orbit-node orbit-node-c" href="#projects" data-note="Building and studying embodied AR and VR interactions.">Immersive interaction</a>
+              <a class="orbit-node orbit-node-d" href="#projects" data-note="Understanding how visible sensing shapes adoption.">Social acceptability</a>
+            </div>
+            <p class="orbit-note" aria-live="polite">Explore the questions connecting my work.</p>
+          </aside>
         </div>
       </section>
 
@@ -98,5 +115,6 @@
     </main>
     <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year"></span> Gahui Kim</p><p>Last updated September 2026</p></div></footer>
     <script src="script.js?v=20260921-2"></script>
+    <script src="orbit.js?v=20261001-1"></script>
   </body>
 </html>
