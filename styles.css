@@ -117,7 +117,7 @@ a:hover { color: var(--blue-dark); }
 .hero-reel-copy strong { color: #fff; font-size: 22px; line-height: 1.12; letter-spacing: -.035em; }
 .hero-reel-copy > span { color: rgba(255,255,255,.8); font-size: 12px; line-height: 1.5; }
 .hero-reel-copy small { width: fit-content; margin-top: 5px; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .02em; border-bottom: 1px solid rgba(255,255,255,.56); }
-.proof-strip { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-top: 0; border-radius: 0 0 17px 17px; background: rgba(3,11,18,.46); box-shadow: 0 20px 48px rgba(0,0,0,.14); }
+.proof-strip { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-top: 0; border-radius: 0 0 17px 17px; background: rgba(3,11,18,.46); box-shadow: 0 20px 48px rgba(0,0,0,.14); }
 .proof-strip div { min-width: 0; padding: 13px 12px 14px; border-right: 1px solid rgba(255,255,255,.12); }
 .proof-strip div:last-child { border-right: 0; }
 .proof-strip strong, .proof-strip span { display: block; }
@@ -277,6 +277,7 @@ a:hover { color: var(--blue-dark); }
   .hero-reel-copy strong { font-size: 19px; }
   .proof-strip { border-radius: 0 0 13px 13px; }
   .proof-strip div { padding: 11px 9px 12px; }
+  .proof-strip strong { font-size: 9px; }
   .proof-strip span { font-size: 7px; }
   .research-orbit { max-width: none; padding: 12px; border-radius: 13px; }
   .orbit-stage { height: 210px; }
