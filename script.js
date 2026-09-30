@@ -24,3 +24,9 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach((section) => observer.observe(section));
 
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+const heroReel = document.querySelector('.hero-reel-video');
+if (heroReel && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  heroReel.removeAttribute('autoplay');
+  heroReel.pause();
+}
