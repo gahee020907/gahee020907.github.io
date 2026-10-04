@@ -56,26 +56,7 @@ if (researchOrbit) {
   };
 
   nodes.forEach((node) => {
-    node.addEventListener('pointerenter', () => activateThread(node));
-    node.addEventListener('focus', () => activateThread(node));
     node.addEventListener('click', () => activateThread(node));
   });
 
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    stage.addEventListener('pointermove', (event) => {
-      const bounds = stage.getBoundingClientRect();
-      const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-      const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-      stage.style.setProperty('--orbit-x', x.toFixed(3));
-      stage.style.setProperty('--orbit-y', y.toFixed(3));
-      researchOrbit.style.setProperty('--glow-x', `${((x + 0.5) * 100).toFixed(1)}%`);
-      researchOrbit.style.setProperty('--glow-y', `${((y + 0.5) * 100).toFixed(1)}%`);
-    });
-    stage.addEventListener('pointerleave', () => {
-      stage.style.setProperty('--orbit-x', '0');
-      stage.style.setProperty('--orbit-y', '0');
-      researchOrbit.style.setProperty('--glow-x', '50%');
-      researchOrbit.style.setProperty('--glow-y', '50%');
-    });
-  }
 }
