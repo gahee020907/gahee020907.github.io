@@ -355,6 +355,34 @@ a:hover { color: var(--blue-dark); }
 }
 
 /* Compact research explorer: keep the choices next to their evidence. */
+/* Reading-first layout. */
+.content-main { width: 100%; margin: 0; }
+.section-nav { display: none; }
+.hero-reel { aspect-ratio: auto; }
+.hero-reel::after { display: none; }
+.hero-reel-video { height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+.hero-reel-copy { position: relative; padding: 16px 18px; background: #132b3d; }
+.hero-reel-copy small { margin-top: 0; }
+.proof-strip strong { font-size: 12px; }
+.proof-strip span { font-size: 10px; }
+.research-threads { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; margin-top: 22px; }
+.research-threads > a { display: flex; flex-direction: column; padding: 19px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; background: #fff; transition: border-color .15s ease; }
+.research-threads > a:hover { border-color: var(--blue); }
+.research-threads > a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.research-threads span { color: var(--blue); font: 700 10px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+.research-threads strong { margin-top: 9px; color: var(--ink); font-size: 16px; line-height: 1.4; }
+.research-threads p { color: var(--muted); font-size: 13px; line-height: 1.55; margin: 9px 0 16px; }
+.research-threads small { margin-top: auto; font-size: 11px; font-weight: 700; }
+@media (max-width: 900px) { .research-threads { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 600px) {
+  .research-threads { grid-template-columns: 1fr; gap: 8px; }
+  .research-threads > a { padding: 16px; }
+  .research-threads p { margin-bottom: 10px; }
+  .hero-reel-copy { padding: 14px 16px; }
+  .proof-strip { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .proof-strip strong { font-size: 12px; }
+  .proof-strip span { font-size: 10px; }
+}
 .research-orbit-inline { max-width: none; padding: 22px; background: #fff; border-radius: 12px; box-shadow: none; }
 .research-orbit-inline::before { display: none; }
 .research-orbit-inline .orbit-heading { font-size: 10px; letter-spacing: .08em; }
