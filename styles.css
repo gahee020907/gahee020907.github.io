@@ -356,6 +356,7 @@ a:hover { color: var(--blue-dark); }
 
 /* Compact research explorer: keep the choices next to their evidence. */
 /* Reading-first layout. */
+.divergence-grid p + span { grid-column: 1 / -1; margin-bottom: 4px; font-weight: 600; }
 .content-main { width: 100%; margin: 0; }
 .section-nav { display: none; }
 .hero-reel { aspect-ratio: auto; }
