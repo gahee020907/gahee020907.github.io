@@ -1,127 +1,103 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Gahui Kim is an HCI researcher studying how AI-generated contributions become meaningful human action through instrumented interactive systems and empirical user research." />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Gahui Kim | HCI Researcher" />
-    <meta property="og:description" content="Tracing how people interpret, reshape, adopt, or reject AI contributions across proactive AI, AR, and XR." />
-    <meta property="og:type" content="website" />
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"Person","name":"Gahui Kim","url":"https://gahee020907.github.io/","sameAs":["https://scholar.google.com/citations?user=Ua1PoL8AAAAJ&hl=en","https://orcid.org/0009-0007-9822-4203"]}
-    </script>
-    <title>Gahui Kim | HCI Researcher</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=20261004-review6" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header" id="top">
-      <div class="container header-inner">
-        <a class="site-name" href="#top">Gahui Kim</a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
-        <nav class="nav" aria-label="Primary navigation">
-          <a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#background">Background</a><a href="assets/Gahui_Kim_CV.pdf?v=20261005-final" target="_blank" rel="noreferrer">CV</a>
-        </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Gahui Kim — HCI researcher exploring how people think, create, and connect with AI.">
+  <title>Gahui Kim — Research & Making</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="interactions.css">
+  <script src="interactions.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="wordmark" href="#about">Gahui Kim<span>김가희</span></a>
+    <div class="portrait-wrap"><img class="portrait" src="assets/gahui-kim.jpg" alt="Gahui Kim"><span class="portrait-caption">A little curiosity, a lot of making.</span></div>
+    <p class="location">HCI researcher<br>Seoul, South Korea</p>
+    <nav aria-label="Main navigation">
+      <a href="#about">About <span>01</span></a>
+      <a href="#work">Selected work <span>02</span></a>
+      <a href="#publications">Publications <span>03</span></a>
+      <a href="#background">Background <span>04</span></a>
+    </nav>
+    <div class="sidebar-bottom"><a href="assets/Gahui_Kim_CV.pdf">Curriculum vitae ↗</a><a href="mailto:gahee020907@gmail.com">Get in touch ↗</a><div class="social"><a href="https://scholar.google.com/citations?user=Ua1PoL8AAAAJ&hl=en">Scholar</a><a href="https://orcid.org/0009-0007-9822-4203">ORCID</a></div><p>© 2026 Gahui Kim</p></div>
+  </aside>
+  <main id="main">
+    <section class="intro" id="about">
+      <div class="eyebrow"><span class="spark" aria-hidden="true">✳</span> RESEARCH, WITH A HUMAN SIDE</div>
+      <h1>Hi, I’m Gahui.<br>I explore how people <em>think,<br class="desktop-break"> create, and connect</em> with AI.</h1>
+      <p class="intro-text">I’m an HCI researcher who enjoys building things and understanding what happens when people use them. My work brings together interactive AI, immersive experiences, and everyday life.</p>
+      <p class="intro-text">I completed my master’s in Immersive Media Engineering at Sungkyunkwan University. Through prototypes and user studies, I explore how people find inspiration in AI, form connections with it, and decide whether to welcome it into their lives.</p>
+      <ul class="tags" aria-label="Research interests"><li>Human–AI interaction</li><li>Creativity support</li><li>Immersive experiences</li></ul>
+      <div class="research-explorer">
+        <div class="explorer-caption">THREE WAYS INTO MY WORK <span>Choose a thread ↘</span></div>
+        <div class="thread-tabs" role="tablist" aria-label="Explore research themes">
+          <button id="tab-think" role="tab" aria-selected="true" aria-controls="panel-think" tabindex="0"><span aria-hidden="true">⌁</span> Think</button>
+          <button id="tab-create" role="tab" aria-selected="false" aria-controls="panel-create" tabindex="-1"><span aria-hidden="true">✳</span> Create</button>
+          <button id="tab-connect" role="tab" aria-selected="false" aria-controls="panel-connect" tabindex="-1"><span aria-hidden="true">◎</span> Connect</button>
+        </div>
+        <div id="panel-think" class="thread-panel" role="tabpanel" aria-labelledby="tab-think" tabindex="0"><span class="thread-number" aria-hidden="true">01</span><div><p class="overline">CRITICAL ENGAGEMENT · THINKCAP</p><h2>What do we keep, question, or change?</h2><p>A software prototype for reading, judging, and revising AI-generated writing.</p><a href="#thinkcap">Explore the prototype ↓</a></div></div>
+        <div id="panel-create" class="thread-panel" role="tabpanel" aria-labelledby="tab-create" tabindex="0" hidden><span class="thread-number" aria-hidden="true">02</span><div><p class="overline">CREATIVE EXPLORATION · SEE, SENSE, SPARK</p><h2>Where could an unexpected idea take us?</h2><p>Context-aware suggestions that connect what we see with what we are researching.</p><a href="#spark-project">Explore the research ↓</a></div></div>
+        <div id="panel-connect" class="thread-panel" role="tabpanel" aria-labelledby="tab-connect" tabindex="0" hidden><span class="thread-number" aria-hidden="true">03</span><div><p class="overline">EMOTIONAL EXPERIENCE · NO TIME TO SAY GOODBYE</p><h2>What stays with us when an AI interaction ends?</h2><p>An immersive companion and a study of emotional responses to sudden termination.</p><a href="#goodbye-project">Explore the research ↓</a></div></div>
       </div>
-    </header>
-
-    <main id="main" class="container">
-      <section class="profile" aria-labelledby="profile-name">
-        <div class="hero-copy">
-          <div class="hero-person">
-            <img class="portrait" src="assets/gahui-kim.jpg?v=20260921-2" alt="Portrait of Gahui Kim" />
-            <div><h1 id="profile-name">Gahui Kim</h1><p>HCI Researcher · Seoul, South Korea</p></div>
-          </div>
-          <p class="kicker">Human–Computer Interaction · Human–AI Interaction</p>
-          <p class="hero-statement">I study how people <em>think, create, and connect</em> with AI—in immersive spaces and everyday life.</p>
-          <p class="bio">I build instrumented AI and XR systems, then trace how people interpret, reshape, adopt, or reject what those systems contribute. I combine hands-on prototyping with empirical studies of human thinking, agency, and experience.</p>
-          <div class="hero-actions"><a class="hero-action-primary" href="#projects">Explore selected work ↓</a><a href="assets/Gahui_Kim_CV.pdf?v=20261005-final" target="_blank" rel="noreferrer">View CV ↗</a></div>
-          <p class="availability"><span></span>Seeking funded doctoral research opportunities for 2027.</p>
-        </div>
-        <div class="hero-showcase">
-          <a class="hero-reel" href="#see-sense-spark-demo" aria-label="Watch the full See, Sense, Spark research video">
-              <video class="hero-reel-video" autoplay muted loop playsinline preload="auto" poster="assets/gahui-kim-hero-reel.jpg" aria-label="See, Sense, Spark prototype research reel">
-                <source src="assets/gahui-kim-hero-reel.mp4" type="video/mp4" />
-              </video>
-              <span class="hero-reel-badge"><i></i> Prototype in action</span>
-              <span class="hero-reel-copy"><strong>See, Sense, Spark</strong><span>Context-aware proactive AI on smart glasses</span><small>Watch full research video ↘</small></span>
-          </a>
-          <div class="proof-strip" aria-label="Selected research evidence">
-            <div><strong>2 journal articles</strong><span>Published research</span></div>
-            <div><strong>CHI ’26</strong><span>Extended Abstracts</span></div>
-            <div><strong>SA ’25</strong><span>SIGGRAPH Asia Poster</span></div>
-            <div><strong>N = 369</strong><span>Master’s thesis study</span></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="content-layout">
-        <div class="content-main">
-          <section class="section" id="research" aria-labelledby="research-title">
-            <h2 id="research-title">Research Interests</h2>
-            <p class="research-intro">I build interactive AI and XR prototypes and study how people interpret, adapt, and use them through controlled experiments, interaction logs, and analysis of participants’ responses.</p>
-            <div class="research-threads" aria-label="Four threads across my work">
-              <a href="#divergence-title"><span>Think</span><strong>AI and human thinking</strong><p>When do AI contributions support users’ own exploration and metacognition?</p><small>Recent finding →</small></a>
-              <a href="#see-sense-spark-demo"><span>Create</span><strong>Proactive creative support</strong><p>How can AI contribute ideas while users shape the direction?</p><small>See, Sense, Spark →</small></a>
-              <a href="#no-time-goodbye-demo"><span>Connect</span><strong>Human–AI relationships</strong><p>How do people respond when an immersive AI interaction ends?</p><small>No Time to Say Goodbye →</small></a>
-              <a href="#socially-visible-sensing"><span>Adopt</span><strong>Social acceptability</strong><p>How does visible sensing shape acceptance of AR smart glasses?</p><small>Master’s thesis →</small></a>
-            </div>
-            <article class="divergence-finding" aria-labelledby="divergence-title">
-              <div class="divergence-heading"><div><p class="eyebrow">A finding from my recent research</p><h3 id="divergence-title">AI outputs differed; participants’ question breadth showed no detectable difference.</h3></div><span>CHI 2027 · under review</span></div>
-              <p class="divergence-intro">In a follow-up study of proactive AI on smart glasses, profile policies produced sharply different generated content. Participants’ own question breadth and self-reports did not show the same separation.</p>
-              <div class="divergence-grid">
-                <div><p>AI-generated output · 24 complete session logs</p><span>Coarse vs fine-grained profile</span><strong>86% vs 26%</strong><span>new interpretive frames</span><strong>42% vs 4%</strong><span>peripheral-object content</span></div>
-                <div><p>Participant outcomes · 26 researchers</p><span>Coarse vs fine-grained profile</span><strong>6.08 vs 5.71</strong><span>concept areas · p = .743</span><strong>No detectable difference</strong><span>across self-report constructs</span></div>
-              </div>
-              <p class="divergence-takeaway">In this sample, output differences were not accompanied by a detectable difference in question breadth; this does not establish equivalence. I would like to investigate when differences in AI-generated ideas do shape users’ own thinking.</p>
-            </article>
-          </section>
-
-          <section class="section" id="publications" aria-labelledby="publications-title">
-            <div class="section-title-row"><h2 id="publications-title">Publications</h2><div class="profile-links"><a class="small-link" href="https://scholar.google.com/citations?user=Ua1PoL8AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a><a class="small-link" href="https://orcid.org/0009-0007-9822-4203" target="_blank" rel="me noreferrer">ORCID ↗</a></div></div>
-            <h3 class="year-heading">2026</h3>
-            <article class="pub-item"><div class="pub-index">[1]</div><div><h3><a class="title-link" href="https://doi.org/10.1145/3772363.3798687" target="_blank" rel="noreferrer">No Time to Say Goodbye: Emotional Loss Responses to Sudden Termination in Immersive AI Interactions</a></h3><p class="authors"><strong>Gahui Kim</strong>, Yebom Choi, Yoojeong Kim, and Changjun Lee</p><p class="venue"><span class="venue-mark">CHI EA ’26</span> ACM Conference on Human Factors in Computing Systems Extended Abstracts</p><p class="pub-actions"><a href="https://doi.org/10.1145/3772363.3798687" target="_blank" rel="noreferrer">[DOI]</a><a href="#no-time-goodbye-demo">[VIDEO]</a></p></div></article>
-            <article class="pub-item"><div class="pub-index">[2]</div><div><h3>Phodong: A Vision-Based Platform for Elaborating Children’s Narrative Play and Parent–Child Co-Creation</h3><p class="authors"><strong>Gahui Kim</strong>, Yoojeong Kim, and Yebom Choi</p><p class="venue"><span class="venue-mark">HCI Korea ’26</span> Conference Proceedings · Korean-language paper</p></div></article>
-            <h3 class="year-heading">2025</h3>
-            <article class="pub-item"><div class="pub-index">[3]</div><div><h3><a class="title-link" href="https://doi.org/10.1145/3757374.3771458" target="_blank" rel="noreferrer">See, Sense, Spark: Profiling Granularity in Proactive AI for Creative Research Ideation</a></h3><p class="authors"><strong>Gahui Kim</strong>, Yebom Choi, and Changjun Lee</p><p class="venue"><span class="venue-mark">SIGGRAPH Asia ’25</span> Posters</p><p class="pub-actions"><a href="https://doi.org/10.1145/3757374.3771458" target="_blank" rel="noreferrer">[DOI]</a><a href="#see-sense-spark-demo">[VIDEO]</a></p></div></article>
-            <article class="pub-item"><div class="pub-index">[4]</div><div><h3>What Makes Audiences Pay More for Immersive Cinema? A Conjoint Analysis of ScreenX Preferences and Willingness-to-Pay</h3><p class="authors"><strong>Gahui Kim</strong>, Soo Y. Kim, Sanghoon Park, Seoyoung Park, Yebom Choi, and Changjun Lee</p><p class="venue"><span class="venue-mark">ITPR 32(4)</span> International Telecommunications Policy Review, 1–45</p><p class="pub-actions"><a href="https://doi.org/10.37793/ITPR.32.4.1" target="_blank" rel="noreferrer">[DOI]</a></p></div></article>
-            <article class="pub-item"><div class="pub-index">[5]</div><div><h3>The Impact of Pre-adulthood Immersive Media Experiences on Continued Use Intention in Adulthood: An Empirical Study Applying the Value-based Adoption Model (VAM) and Positive Technology Readiness Index (PTRI)</h3><p class="authors"><strong>Gahui Kim</strong>, Yunseul Choi, and Changjun Lee</p><p class="venue"><span class="venue-mark">IS&amp;M 26(1)</span> Information Society &amp; Media, 143–183</p><p class="pub-actions"><a href="https://doi.org/10.52558/ism.2025.04.26.1.143" target="_blank" rel="noreferrer">[DOI]</a></p></div></article>
-            <h3 class="year-heading">2024</h3>
-            <article class="pub-item"><div class="pub-index">[6]</div><div><h3>Camp_Around: An Integrated Tour Service for International Students in Korea</h3><p class="authors"><strong>Gahui Kim</strong> and Youngseo Han</p><p class="venue"><span class="venue-mark">HCI Korea ’24</span> Creative Award Proceedings, 1224–1227</p></div></article>
-            <details class="under-review" open><summary>Manuscripts under review <span>3</span></summary><ol><li><strong><em>Socially Visible Sensing in AR Smart Glasses: Outward Recording, Societal Concern, and Wearer Stigma</em></strong> · <em>Technology in Society</em>.</li><li><strong><em>How Much Should Proactive AI Know About Its User? Profile Granularity in AI-Glasses Support for Research Ideation</em></strong> · CHI 2027.</li><li><a class="review-link" href="#no-time-goodbye-demo"><strong><em>Goodbyes Matter: Immersive Relational Offboarding for Reducing Loss When AI Companion Interactions End</em></strong></a> · CHI 2027 · expanded follow-up to <em>No Time to Say Goodbye</em>.</li></ol></details>
-          </section>
-
-          <section class="section" id="projects" aria-labelledby="projects-title">
-            <h2 id="projects-title">Selected Projects</h2>
-            <article class="project-row" id="socially-visible-sensing"><div class="project-code">ARSG</div><div><p class="project-meta">Master’s thesis · 2026</p><h3>Socially Visible Sensing</h3><p>Investigating how outward-facing sensing changes the meaning of wearing AR smart glasses and shapes adoption resistance among wearers and bystanders.</p><div class="project-evidence" aria-label="Study evidence"><span>N = 369</span><span>3 sensing modes</span><span>scenario-based experiment</span></div><p class="keywords">AR smart glasses · social acceptability · stigma · scenario-based experiment</p><p class="pub-actions"><a href="https://dcollection.skku.edu/srch/srchDetail/000000194207" target="_blank" rel="noreferrer">[THESIS]</a></p></div></article>
-            <article class="project-row project-row--featured"><div class="project-code">PAI</div><div><p class="project-meta">Proactive AI · XREAL Air 2 Pro · 2025–2026</p><h3>See, Sense, Spark</h3><p>An end-to-end AI-glasses prototype that uses visual and academic context to offer research ideas without an explicit request. The system supports controlled experiments and interaction-log analysis.</p><div class="project-evidence" aria-label="Prototype and study evidence"><span>system–participant divergence</span><span>XREAL Air 2 Pro</span><span>interaction-log analysis</span></div><p class="keywords">proactive AI · creativity support · appropriation · human agency</p><figure class="project-demo" id="see-sense-spark-demo"><video controls preload="none" playsinline poster="assets/see-sense-spark-pov.jpg" aria-label="See, Sense, Spark research video"><source src="assets/see-sense-spark-demo.mp4" type="video/mp4" />Your browser does not support embedded video. <a href="assets/see-sense-spark-demo.mp4">Download the research video</a>.</video><figcaption><span>Research overview and prototype scenarios</span><span>03:02 · XREAL Air 2 Pro</span></figcaption></figure></div></article>
-            <article class="project-row project-row--featured"><div class="project-code">XR</div><div><p class="project-meta">Immersive AI companion · CHI EA 2026</p><h3><a class="title-link" href="https://doi.org/10.1145/3772363.3798687" target="_blank" rel="noreferrer">No Time to Say Goodbye: Emotional Loss Responses to Sudden Termination in Immersive AI Interactions</a></h3><p>A custom immersive companion system and controlled study examining how advance warning changes emotional loss when an AI interaction ends.</p><div class="project-evidence" aria-label="System and study evidence"><span>N = 26</span><span>custom companion system</span><span>controlled experiment</span></div><p class="project-followup"><strong>Expanded follow-up under review:</strong> <em>Goodbyes Matter: Immersive Relational Offboarding for Reducing Loss When AI Companion Interactions End</em> (CHI 2027).</p><p class="keywords">AI companions · relational offboarding · emotional loss · experiment</p><p class="pub-actions project-actions"><a href="https://doi.org/10.1145/3772363.3798687" target="_blank" rel="noreferrer">[PAPER]</a><a href="assets/no-time-to-say-goodbye-demo.mp4" target="_blank" rel="noreferrer">[VIDEO]</a></p><figure class="project-demo" id="no-time-goodbye-demo"><video controls preload="metadata" playsinline poster="assets/goodbye-title.jpg" aria-label="No Time to Say Goodbye research video"><source src="assets/no-time-to-say-goodbye-demo.mp4" type="video/mp4" />Your browser does not support embedded video. <a href="assets/no-time-to-say-goodbye-demo.mp4">Download the research video</a>.</video><figcaption><span>System, experimental procedure, and key findings</span><span>01:17 · CHI EA ’26</span></figcaption></figure></div></article>
-            <article class="project-row"><div class="project-code">PHY</div><div><p class="project-meta">Production-stage iOS research system · 2026</p><h3>Phodong</h3><p>A SwiftUI/Firebase system that turns children’s real-world object discoveries into personalised stories. Its planned study traces each object from discovery and recognition through character transformation, story inclusion, and child response.</p><div class="project-evidence" aria-label="System and research evidence"><span>SwiftUI + Firebase</span><span>end-to-end trace</span><span>child–AI interaction</span></div><p class="keywords">phygital storytelling · co-creation · family HCI · generative AI</p></div></article>
-            <div class="prototype-grid" aria-label="Research systems in development">
-              <article><p>Independent prototype in development</p><h3>ThinkCap</h3><span>Critical-reading tools for line focus, annotation, and behavioural logging. Software prototype; physical integration and evaluation are planned.</span></article>
-              <article><p>Research system in development</p><h3>Progressive AR Sound Cues</h3><span>A Unity/XREAL prototype for studying progressive visual sound cues and attention. Device validation and participant studies are planned.</span></article>
-            </div>
-          </section>
-
-          <section class="section" id="background" aria-labelledby="background-title">
-            <h2 id="background-title">Background</h2>
-            <div class="cv-block"><h3>Experience</h3><div class="cv-row"><span>2024–present</span><p><strong>Researcher</strong><br />AXIS Lab, Interaction Science Institute, Sungkyunkwan University<br /><small>Undergraduate Research Assistant · Master’s Student Researcher · Researcher</small></p></div><div class="cv-row"><span>Apr 2026–present</span><p><strong>Researcher and App Developer</strong><br />Personalized AI Story Generation Project · Seoul RISE</p></div><div class="cv-row"><span>Jul 2026</span><p><strong>Assistant Instructor</strong><br />Generative AI Content Creation Workshop · Hyundai Futurenet</p></div><div class="cv-row"><span>Aug 2025</span><p><strong>Research Intern</strong><br />RGB Makers Co., Ltd.</p></div><div class="cv-row"><span>Mar–Jun 2025</span><p><strong>BK21 Research Assistant</strong><br />Social Interaction Big Data Education and Research Group</p></div></div>
-            <div class="cv-block"><h3>Education</h3><div class="cv-row"><span>Mar 2025–Aug 2026</span><p><strong>Master of Science in Engineering, Immersive Media Engineering</strong><br />Sungkyunkwan University · Advisor: Prof. Changjun Lee</p></div><div class="cv-row"><span>Feb 2021–Feb 2025</span><p><strong>Bachelor of Culture &amp; Technology; Bachelor of Economics</strong><br />Culture and Technology Convergence · International Trade Linked Major · SKKU Summa Cum Laude</p></div></div>
-            <div class="methods-grid"><div><h3>Methods</h3><p>Controlled experiments, survey research, structural equation modelling, discrete-choice conjoint analysis, willingness-to-pay estimation, clustering, and prototype-based user studies.</p></div><div><h3>Technical</h3><p>Python, R, JavaScript, PyTorch, NumPy, pandas, COLMAP, Unity, Unreal Engine, Three.js, WebGL, and GLSL.</p></div><div><h3>Languages</h3><p>Korean (native), Chinese (proficient), English (academic research communication), and Finnish (beginner; currently studying).</p></div></div>
-          </section>
-
-          <section class="section" id="recognition" aria-labelledby="recognition-title">
-            <h2 id="recognition-title">Selected Recognition</h2>
-            <div class="award-row"><span>2026</span><p><strong>Grand Prize</strong>, HCI Korea Creative Award</p></div><div class="award-row"><span>2025</span><p><strong>SKKU Summa Cum Laude</strong>, Sungkyunkwan University</p></div><div class="award-row"><span>2024</span><p><strong>Exhibited Work</strong>, Ars Electronica, Linz</p></div>
-          </section>
-        </div>
+      <div class="note"><span class="dot" aria-hidden="true"></span><p>Looking ahead to doctoral research in 2027.<br><span>Available from May onward · open to conversations</span></p><a href="mailto:gahee020907@gmail.com" aria-label="Email Gahui about doctoral research">Say hello ↗</a></div>
+    </section>
+    <section id="through-the-lens" aria-labelledby="lens-title">
+      <div class="section-heading"><h2 id="lens-title">A different way of seeing.</h2><span>THROUGH THE LENS</span></div>
+      <div class="lens-scene">
+        <video id="lens-background" muted loop playsinline preload="metadata" poster="assets/lens-poster.jpg" aria-label="First-person See, Sense, Spark prototype footage in an exhibition"><source src="assets/lens-background.mp4" type="video/mp4"></video>
+        <div class="lens-outline" aria-hidden="true"><span></span><span></span></div>
       </div>
-
-      <section class="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p>I welcome conversations about funded doctoral research opportunities and collaborative HCI projects beginning in 2027.</p><a href="mailto:gahee020907@gmail.com">gahee020907@gmail.com</a></section>
-    </main>
-    <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year"></span> Gahui Kim</p><p>Last updated October 2026</p></div></footer>
-  <script src="script.js?v=20261004-compact"></script>
-  </body>
+      <div class="lens-footer"><a href="#spark-project">Through my prototype · See, Sense, Spark</a><button type="button" class="lens-motion" aria-controls="lens-background">Play</button></div>
+    </section>
+    <section id="work">
+      <div class="section-heading"><h2>Selected work</h2><span>Ideas made tangible</span></div>
+      <article class="project" id="spark-project">
+        <a class="project-image goodbye-thumbnail" href="#spark-film" aria-label="Watch See, Sense, Spark"><img src="assets/see-sense-spark-pov.jpg" alt="First-person view of the See, Sense, Spark smart-glasses prototype" loading="lazy"><span class="goodbye-thumbnail-title" aria-hidden="true">See, Sense,<br>Spark</span></a>
+        <div class="project-copy"><p class="overline">SIGGRAPH ASIA 2025 · POSTERS</p><h3><a href="https://doi.org/10.1145/3757374.3771458">See, Sense, Spark <span>↗</span></a></h3><p>What if an AI could notice something around you and offer a new research direction?</p><p class="detail">I led the project and built a smart-glasses prototype that draws on visual and academic context to suggest ideas, then studied how people respond.</p><div class="links"><a href="https://doi.org/10.1145/3757374.3771458">Paper ↗</a><a href="#spark-film">Watch demo ↓</a></div></div>
+      </article>
+      <details class="system-notes"><summary>Explore the system <span>See, Sense, Spark +</span></summary><div class="system-grid"><div><h4>Context</h4><p>Visual and academic context inform proactive research-idea suggestions.</p></div><div><h4>Prototype</h4><p>A smart-glasses system implemented on XREAL Air 2 Pro.</p></div><div><h4>Study</h4><p>Controlled user experiments and interaction-log analysis examine responses to the suggestions.</p></div></div></details>
+      <article class="project" id="goodbye-project">
+        <a class="project-image goodbye-thumbnail" href="#goodbye-film" aria-label="Explore No Time to Say Goodbye"><img src="assets/nttsg-study.jpg" alt="A smart-glasses wearer pointing to conversation materials during the IRO study" loading="lazy"><span class="goodbye-thumbnail-title" aria-hidden="true">No Time to<br>Say Goodbye</span></a>
+        <div class="project-copy"><p class="overline">CHI 2026 · EXTENDED ABSTRACTS</p><h3><a href="https://doi.org/10.1145/3772363.3798687">No Time to Say Goodbye <span>↗</span></a></h3><p>How does it feel when an interaction with an AI companion suddenly ends?</p><p class="detail">I led the project, developed an immersive companion, and designed a controlled study of emotional loss following the end of the interaction.</p><div class="links"><a href="https://doi.org/10.1145/3772363.3798687">Paper ↗</a><a href="#goodbye-film">Watch demo ↓</a></div></div>
+      </article>
+      <details class="system-notes"><summary>Explore the system <span>No Time to Say Goodbye +</span></summary><div class="system-grid"><div><h4>Question</h4><p>How do people respond emotionally to the sudden end of an immersive AI interaction?</p></div><div><h4>Prototype</h4><p>A custom immersive AI companion used in a controlled experimental setting.</p></div><div><h4>Study</h4><p>A between-group experiment examining emotional loss following termination.</p></div></div></details>
+      <details class="system-notes thinkcap-notes" id="thinkcap"><summary>ThinkCAP <span>Critical engagement with AI writing +</span></summary><p>A software prototype I developed to support reading, judging, and revising AI-generated writing.</p><div class="system-grid"><div><h4>Read</h4><p>Focus on passages and mark parts that need attention.</p></div><div><h4>Reflect</h4><p>Add annotations and return to marked passages.</p></div><div><h4>Revise</h4><p>Reconsider and edit the text as your judgment develops.</p></div></div><p class="prototype-status">Software prototype · user evaluation has not been conducted.</p></details>
+      <div class="small-projects">
+        <article><span class="project-symbol" aria-hidden="true">◉ — ◉</span><p class="overline">MASTER’S THESIS · 2026</p><h3>Socially Visible Sensing</h3><p>What does wearing a sensing device communicate to others? My thesis explored privacy concerns, societal concerns, and social stigma around AR smart glasses.</p><a href="https://dcollection.skku.edu/srch/srchDetail/000000194207">Read thesis ↗</a></article>
+        <article><span class="project-symbol orange" aria-hidden="true">✦</span><p class="overline">CHILD–AI INTERACTION · 2026</p><h3>Phodong</h3><p>Turning things children discover in the real world into stories they can develop. I led the project and developed the iOS prototype using SwiftUI and Firebase.</p><span class="recognition">HCI Korea Creative Award · Grand Prize</span></article>
+      </div>
+      <details class="films" id="spark-film"><summary>Inside See, Sense, Spark <span>Play research demo +</span></summary><video controls playsinline preload="none" poster="assets/see-sense-spark-pov.jpg"><source src="assets/see-sense-spark-demo.mp4" type="video/mp4"></video></details>
+      <details class="films" id="goodbye-film"><summary>Inside No Time to Say Goodbye <span>Play research demo +</span></summary><video controls playsinline preload="none" poster="assets/goodbye-title.jpg"><source src="assets/no-time-to-say-goodbye-demo.mp4" type="video/mp4"></video></details>
+    </section>
+    <section id="publications">
+      <div class="section-heading"><h2>Publications</h2><a href="https://scholar.google.com/citations?user=Ua1PoL8AAAAJ&hl=en">Google Scholar ↗</a></div>
+      <div class="publication"><span class="year">2026</span><div><h3><a href="https://doi.org/10.1145/3772363.3798687">No Time to Say Goodbye: Emotional Loss Responses to Sudden Termination in Immersive AI Interactions ↗</a></h3><p><strong>Gahui Kim</strong>, Yebom Choi, Yoojeong Kim, and Changjun Lee</p><span class="venue">CHI Extended Abstracts</span></div></div>
+      <div class="publication"><span class="year">2026</span><div><h3>Phodong: A Vision-Based Platform for Elaborating Children’s Narrative Play and Parent–Child Co-Creation</h3><p><strong>Gahui Kim</strong>, Yoojeong Kim, and Yebom Choi</p><span class="venue">HCI Korea · Korean-language paper</span></div></div>
+      <div class="publication"><span class="year">2025</span><div><h3><a href="https://doi.org/10.1145/3757374.3771458">See, Sense, Spark: Profiling Granularity in Proactive AI for Creative Research Ideation ↗</a></h3><p><strong>Gahui Kim</strong>, Yebom Choi, and Changjun Lee</p><span class="venue">SIGGRAPH Asia Posters</span></div></div>
+      <div class="publication"><span class="year">2025</span><div><h3><a href="https://doi.org/10.37793/ITPR.32.4.1">What Makes Audiences Pay More for Immersive Cinema? A Conjoint Analysis of ScreenX Preferences and Willingness-to-Pay ↗</a></h3><p><strong>Gahui Kim</strong>, Soo Y. Kim, Sanghoon Park, Seoyoung Park, Yebom Choi, and Changjun Lee</p><span class="venue">International Telecommunications Policy Review</span></div></div><div class="publication"><span class="year">2025</span><div><h3><a href="https://doi.org/10.52558/ism.2025.04.26.1.143">The Impact of Pre-adulthood Immersive Media Experiences on Continued Use Intention in Adulthood: An Empirical Study Applying the Value-based Adoption Model (VAM) and Positive Technology Readiness Index (PTRI) ↗</a></h3><p><strong>Gahui Kim</strong>, Yunseul Choi, and Changjun Lee</p><span class="venue">Information Society &amp; Media</span></div></div><div class="publication"><span class="year">2024</span><div><h3>Camp_Around: An Integrated Tour Service for International Students in Korea</h3><p><strong>Gahui Kim</strong> and Youngseo Han</p><span class="venue">HCI Korea · Creative Award Proceedings</span></div></div>
+      <div class="review-manuscripts" aria-labelledby="review-title">
+        <h3 id="review-title">Manuscripts under review</h3>
+        <p class="review-note">Submitted manuscripts · Not yet accepted for publication</p>
+        <ul>
+          <li><h4>Socially Visible Sensing in AR Smart Glasses: Outward Recording, Societal Concern, and Wearer Stigma</h4><span class="venue">Technology in Society · Under review</span></li>
+          <li><h4>How Much Should Proactive AI Know About Its User? Profile Granularity in AI-Glasses Support for Research Ideation</h4><span class="venue">CHI 2027 · Under review</span></li>
+          <li><h4>Goodbyes Matter: Immersive Relational Offboarding for Reducing Loss When AI Companion Interactions End</h4><span class="venue">CHI 2027 · Under review</span><p class="review-note">Expanded analysis of the completed study reported in No Time to Say Goodbye.</p></li>
+        </ul>
+      </div>
+    </section>
+    <section id="background"><div class="section-heading"><h2>A little background</h2><a href="assets/Gahui_Kim_CV.pdf">Full CV ↗</a></div><div class="background-grid"><div><p class="overline">EDUCATION</p><h3>Immersive Media Engineering</h3><p>M.S. · Sungkyunkwan University<br>2025–2026</p><h3>Culture &amp; Technology · Economics</h3><p>Bachelor’s degrees · Sungkyunkwan University<br>2021–2025</p></div><div><p class="overline">HOW I WORK</p><p>I bring ideas into working prototypes, design user studies, and analyse what people do and experience.</p><p>My projects span smart glasses, immersive companions, mobile apps, and tools for engaging with AI-generated writing.</p></div></div></section>
+    <footer><span class="spark" aria-hidden="true">✳</span><h2>Let’s stay curious.</h2><p>I’d love to talk about research, prototypes,<br>and the questions that keep you thinking.</p><a href="mailto:gahee020907@gmail.com">gahee020907@gmail.com ↗</a><div class="footer-meta"><span>Designed around people, ideas, and things made.</span><span>Updated October 2026</span></div></footer>
+  </main>
+</div>
+<script>
+function revealFilm(){const target=document.querySelector(location.hash === '#spark-film' ? '#spark-film' : location.hash === '#goodbye-film' ? '#goodbye-film' : 'body');if(target.tagName==='DETAILS')target.open=true;}
+window.addEventListener('hashchange',revealFilm);revealFilm();
+const sections=document.querySelectorAll('main > section');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.hash==='#'+entry.target.id));}});},{rootMargin:'-10% 0px -65% 0px'});sections.forEach(s=>observer.observe(s));
+</script>
+</body>
 </html>
