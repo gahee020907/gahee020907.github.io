@@ -91,4 +91,11 @@
 #work .project-copy .links{flex-wrap:wrap;gap:6px 22px;margin-top:8px;font-size:13px;font-weight:650}
 #work .project-copy .links a{display:inline-flex;align-items:center;min-height:30px;color:var(--green);border-bottom:0;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#a6b5a1}
 #work .project-copy .links a:hover{text-decoration-color:currentColor}
+
+@media(max-width:650px){
+  #through-the-lens .lens-scene{width:100%;max-width:100%}
+  #work .project-copy .links a,
+  #panel-create a{display:inline-flex;align-items:center;min-width:44px;min-height:44px;font-size:14px}
+  #panel-create a{border-bottom:0;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#a6b5a1}
+}
 @media(max-width:650px){.lens-scene{aspect-ratio:16/9;min-height:210px}.lens-response.lens-hud{top:28%;left:28%;right:5%;padding:10px}.lens-response.lens-hud h3{font-size:14px}.lens-hud-status{top:21%}.lens-hotspot{bottom:9%;left:5%;font-size:8px}.lens-scene-caption{font-size:7px;bottom:3%}.lens-actions{flex-direction:row;align-items:center}.lens-actions a{font-size:9px}}
